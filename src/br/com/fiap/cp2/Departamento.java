@@ -20,7 +20,7 @@ public class Departamento {
             funcionarios[id] = f;
             id++;
         } else {
-            System.out.println("Capacidade máxima do departamento atingida!");
+            System.out.println("Capacidade máxima do departamento!");
         }
     }
 
