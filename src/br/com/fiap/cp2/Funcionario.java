@@ -39,8 +39,19 @@ public class Funcionario {
         return salarioBase;
     }
 
-    public void aumentarSalario(){
+    //Aumenta 10%
+    public void aumentarSalario() {
+        this.salarioBase += (float) (this.salarioBase * 0.10);
+    }
 
+    //Com parâmetro porcentagem
+    public void aumentarSalario(double porcentagem) {
+        this.salarioBase += (float) (this.salarioBase * (porcentagem / 100));
+    }
+
+    //Com porcentagem e bônus extra
+    public void aumentarSalario(double porcentagem, double bonusExtra) {
+        this.salarioBase += (float) (this.salarioBase * (porcentagem / 100) + bonusExtra);
     }
 }
 
